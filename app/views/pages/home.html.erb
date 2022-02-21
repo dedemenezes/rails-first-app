@@ -1,0 +1,31 @@
+<h1>This is my landing page</h1>
+
+<h2>List of students on my screen</h2>
+
+<form action="/">
+  <input type="text" name="student_name" value="<%= params['student_name'] %>">
+  <input type="number" name="student_name_length" value="<%= params['student_name_length'] %>">
+  <input type="submit" value="Filter">
+</form>
+
+
+<ul>
+  <% @students.each do |student| %>
+    <li><%= student.capitalize %></li>
+  <% end %>
+</ul>
+
+
+<%#= link_to("The text of the link", "/the/path/of/the/link") %>
+<%= link_to("Home", root_path) %>
+<!-- link_to is a helper method (so, a method available to the views) which generates an anchor HTML tag -->
+<!-- Remember there's another syntax for calling methods in Ruby? -->
+<!-- So it could be link_to "The text of the link", "/the/path/of/the/link" -->
+
+<%# link_to ANCHOR_TEXT, PREFIX_path %>
+<%= link_to "Contact page", contact_path %>
+<%= link_to "About page", about_path %>
+
+
+
+<p>Find me in app/views/pages/home.html.erb</p>

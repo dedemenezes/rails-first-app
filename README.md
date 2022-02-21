@@ -1,24 +1,8 @@
-# README
+# Rails application development flow
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* 1st: Do the ROUTE
+* 2nd: Create the CONTROLLER
+* 3rd: Create the controller method (which we call ACTION)
+* 4th: Create the associated view
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+*I added some comments on* **routes.rb***,* **page_controller.rb***,* **home.html.erb**
